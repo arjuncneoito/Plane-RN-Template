@@ -1,11 +1,11 @@
-import 'react-native-gesture-handler';
-import * as React from 'react';
+import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import SecondScreen from '../../screens/SecondScreen';
 import FirstScreen from '../../screens/FirstScreen';
+import SecondScreen from '../../screens/SecondScreen';
 
 const Tab = createBottomTabNavigator();
-const AppTabNavigation = () => {
+
+const AppBottomNavigation = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name="FirstScreen" component={FirstScreen} />
@@ -13,4 +13,4 @@ const AppTabNavigation = () => {
     </Tab.Navigator>
   );
 };
-export default AppTabNavigation;
+export default AppBottomNavigation;
